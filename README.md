@@ -1,11 +1,13 @@
-# sanity-plugin-sanity-color-list-v3
+# sanity-color-list
+
+This is a fork of [Sanity Color List](https://github.com/KimPaow/sanity-color-list) that works in v3 Sanity Studio.
 
 > This is a **Sanity Studio v3** plugin.
 
 ## Installation
 
 ```sh
-npm install sanity-plugin-sanity-color-list-v3
+npm install "https://github.com/jcontonio/sanity-color-list"
 ```
 
 ## Usage
@@ -14,13 +16,17 @@ Add it as a plugin in `sanity.config.ts` (or .js):
 
 ```ts
 import {defineConfig} from 'sanity'
-import {myPlugin} from 'sanity-plugin-sanity-color-list-v3'
+import {colorList} from 'sanity-color-list'
 
 export default defineConfig({
   //...
-  plugins: [myPlugin({})],
+  plugins: [colorList()],
 })
 ```
+
+## Development
+
+Run `npm run link-watch` to get the yalc command to run inside of your studio development.
 
 ## License
 
