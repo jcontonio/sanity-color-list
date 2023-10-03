@@ -1,5 +1,5 @@
-import {ColorListInput, ColorListOptions} from '../components/ColorListInput'
-import {defineType, ObjectDefinition} from 'sanity'
+import { ColorListInput, ColorListOptions } from '../components/ColorListInput'
+import { defineType, ObjectDefinition } from 'sanity'
 
 const colorTypeName = 'colorlist' as const
 
@@ -22,7 +22,7 @@ export const schema = defineType({
   name: colorTypeName,
   type: 'object',
   title: 'Color',
-  ...({components: {input: ColorListInput}} as {}),
+  ...({ components: { input: ColorListInput } } as {}),
   fields: [
     {
       name: 'title',

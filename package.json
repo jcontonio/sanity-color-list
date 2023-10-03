@@ -1,18 +1,18 @@
 {
-  "name": "sanity-plugin-sanity-color-list-v3",
+  "name": "sanity-plugin-sanity-color-list",
   "version": "1.0.0",
   "description": "Displays a list of colors",
   "keywords": [
     "sanity",
     "sanity-plugin"
   ],
-  "homepage": "https://github.com/jcontonio/sanity-color-list-v3#readme",
+  "homepage": "https://github.com/jcontonio/sanity-color-list#readme",
   "bugs": {
-    "url": "https://github.com/jcontonio/sanity-color-list-v3/issues"
+    "url": "https://github.com/jcontonio/sanity-color-list/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/jcontonio/sanity-color-list-v3.git"
+    "url": "git+ssh://git@github.com/jcontonio/sanity-color-list.git"
   },
   "license": "MIT",
   "author": "Jay Contonio <jay@conton.io>",

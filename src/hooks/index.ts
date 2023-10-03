@@ -1,17 +1,15 @@
-import { TinyColor } from '@ctrl/tinycolor'
-import { useEffect, useState } from 'react'
-import { ColorListOptions, StudioColorValue } from '../components/ColorListInput'
-import { useBackground } from './useBackground'
+import {TinyColor} from '@ctrl/tinycolor'
+import {useEffect, useState} from 'react'
+import {ColorListOptions, StudioColorValue} from '../components/ColorListInput'
+import {useBackground} from './useBackground'
 // import { checkEqual, getColorString, getStaticKey } from './helpers'
 
-export type ColorInfo = StudioColorValue & { tc: TinyColor; decorator: TinyColor }
+export type ColorInfo = StudioColorValue & {tc: TinyColor; decorator: TinyColor}
 
-export const useColors = (
-  options?: ColorListOptions
-): { colors: ColorInfo[]; errors?: string[] } => {
+export const useColors = (options?: ColorListOptions): {colors: ColorInfo[]; errors?: string[]} => {
   const [colors, setColors] = useState<ColorInfo[]>([])
   const [errors, setErrors] = useState<string[]>()
-  const { bgBrightness, bgAccentColor } = useBackground(options)
+  const {bgBrightness, bgAccentColor} = useBackground(options)
 
   useEffect(() => {
     const {
@@ -53,7 +51,7 @@ export const useColors = (
         decoratorColor = bgAccentColor
       }
 
-      return [...acc, { value: color.value, title: color.title, tc, decorator: decoratorColor }]
+      return [...acc, {value: color.value, title: color.title, tc, decorator: decoratorColor}]
     }, [])
 
     setColors(_colors)

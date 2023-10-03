@@ -1,3 +1,3 @@
-import { ColorListInput } from './ColorListInput'
+import {ColorListInput} from './ColorListInput'
 
-export { ColorListInput }
+export {ColorListInput}
